@@ -1,6 +1,3 @@
-// import { mergeConfig } from "vite";
-// import { viteMockPlugin } from "./dist/plugin";
-
 /** @type { import('@storybook/react-vite').StorybookConfig } */
 const config = {
   stories: [
@@ -13,7 +10,7 @@ const config = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
-    "./dist/preset",
+    "storybook-addon-vite-mock",
   ],
   framework: {
     name: "@storybook/react-vite",

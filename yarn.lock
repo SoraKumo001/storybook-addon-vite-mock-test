@@ -1038,10 +1038,10 @@
   resolved "https://registry.yarnpkg.com/@base2/pretty-print-object/-/pretty-print-object-1.0.1.tgz#371ba8be66d556812dc7fb169ebc3c08378f69d4"
   integrity sha512-4iri8i1AqYHJE2DstZYkyEprg6Pq6sKx3xn5FpySk9sNhH7qN2LLlHJCfDTZRILNwQNPD7mATWM0TBui7uC1pA==
 
-"@chromatic-com/storybook@1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@chromatic-com/storybook/-/storybook-1.3.2.tgz#75bb7954c1bdf578237791a285e18f9ed24eb587"
-  integrity sha512-XcEWNjpRNHCedKZeaXL1cArTIVAap4hZQS0Khn1u1R/b2WRhBqTFDl582sJDUixBN+qkhdStS23S1+Fj/BC1nQ==
+"@chromatic-com/storybook@1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@chromatic-com/storybook/-/storybook-1.3.3.tgz#102d173d7e67cbc7f974648eaa459aa3d3d53f91"
+  integrity sha512-1y9r691T5vVGDZ0HY3YrCXUnvtrT2YrhDuvDZSvYSNUVpM/Imz6i1dnNMKb3eoI1qRsH55mI4zCt+Iq94NLedQ==
   dependencies:
     chromatic "^11.3.0"
     filesize "^10.0.12"
@@ -4665,7 +4665,7 @@ minimatch@^5.0.1:
   dependencies:
     brace-expansion "^2.0.1"
 
-minimatch@^9.0.1, minimatch@^9.0.4:
+minimatch@^9.0.1:
   version "9.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-9.0.4.tgz#8e49c731d1749cbec05050ee5145147b32496a51"
   integrity sha512-KqWh+VchfxcMNRAJjj2tnsSJdNbHsVgnkBhTNrW7AjVo6OvLtxw8zfT9oLw1JSohlFzJ8jCoTgaoXvJ+kHt6fw==
@@ -5799,6 +5799,19 @@ store2@^2.14.2:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.14.3.tgz#24077d7ba110711864e4f691d2af941ec533deb5"
   integrity sha512-4QcZ+yx7nzEFiV4BMLnr/pRa5HYzNITX2ri0Zh6sT9EyQHbBHacC6YigllUPU9X3D0f/22QCgfokpKs52YRrUg==
 
+storybook-addon-vite-mock@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/storybook-addon-vite-mock/-/storybook-addon-vite-mock-0.0.4.tgz#4313af3864fa1c50f1e3125e6a49f1703b476049"
+  integrity sha512-4TfUSS/FSqyiR9JDLzgS2o5AqZmyYkWyk0WoIXUYnURzmUiY4RXUTj7m35O+2Jz0Q4vjt85UItmQp43tClYuVA==
+  dependencies:
+    "@storybook/jest" "^0.2.3"
+    acorn "^8.11.3"
+    acorn-walk "^8.3.2"
+    astring "^1.8.6"
+    jest-mock "^27.5.1"
+    react-json-tree "^0.19.0"
+    vite "^5.2.10"
+
 storybook@^8.0.8:
   version "8.0.8"
   resolved "https://registry.yarnpkg.com/storybook/-/storybook-8.0.8.tgz#1ef69577d8eb174f8d62e1bd3302a9baa157e670"
@@ -6224,10 +6237,10 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-vite@^5.2.8:
-  version "5.2.8"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-5.2.8.tgz#a99e09939f1a502992381395ce93efa40a2844aa"
-  integrity sha512-OyZR+c1CE8yeHw5V5t59aXsUPPVTHMDjEZz8MgguLL/Q7NblxhZUlTu9xSPqlsUO/y+X7dlU05jdhvyycD55DA==
+vite@^5.2.10:
+  version "5.2.10"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-5.2.10.tgz#2ac927c91e99d51b376a5c73c0e4b059705f5bd7"
+  integrity sha512-PAzgUZbP7msvQvqdSD+ErD5qGnSFiGOoWmV5yAKUEI0kdhjbH6nMWVyZQC/hSc4aXwc0oJ9aEdIiF9Oje0JFCw==
   dependencies:
     esbuild "^0.20.1"
     postcss "^8.4.38"
