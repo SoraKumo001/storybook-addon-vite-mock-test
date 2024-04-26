@@ -2,7 +2,13 @@ import { fn } from "@storybook/test";
 import { StoryObj } from "@storybook/react";
 import { Button } from "./Button";
 import { Test } from "./test";
-import { createMock, getMock, render } from "storybook-addon-vite-mock";
+import {
+  createMock,
+  getMock,
+  getOriginal,
+  render,
+} from "storybook-addon-vite-mock";
+import { v4 } from "uuid";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
@@ -14,7 +20,10 @@ export default {
     moduleMock: {
       mock: () => {
         const mock = createMock(Test);
-        return [mock];
+        const mock2 = createMock(v4);
+        // Set original function
+        mock2.mockImplementation(getOriginal(v4));
+        return [mock, mock2];
       },
     },
   },
@@ -40,7 +49,9 @@ export const Primary: StoryObj = {
   },
   play: async ({ parameters }) => {
     const mock = getMock(parameters, Test);
+    const mock2 = getMock(parameters, v4);
     mock.mockReturnValue("Primary");
+    mock2.mockReturnValue("PrimaryV4");
     render(parameters);
   },
 };
@@ -51,7 +62,9 @@ export const Secondary = {
   },
   play: async ({ parameters }) => {
     const mock = getMock(parameters, Test);
+    const mock2 = getMock(parameters, v4);
     mock.mockReturnValue("Secondary");
+    mock2.mockReturnValue("SecondaryV4");
     render(parameters);
   },
 };
