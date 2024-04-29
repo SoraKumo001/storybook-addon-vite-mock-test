@@ -50,6 +50,7 @@ jobs:
         if: github.ref_name == 'master'
         run: |
           cd storybook-static
+          touch .nojekyll
           git init
           git config --global user.name $GITHUB_ACTOR
           git config --global user.email ${GITHUB_ACTOR}@git
