@@ -10,7 +10,13 @@ const config = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
-    "storybook-addon-vite-mock",
+    {
+      name: "storybook-addon-vite-mock",
+      options: {
+        exclude: ({ id }) => id.includes(".stories."),
+        // debugPath: "tmp",
+      },
+    },
   ],
   framework: {
     name: "@storybook/react-vite",

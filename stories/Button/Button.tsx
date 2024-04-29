@@ -11,7 +11,7 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   const mode = primary
     ? "storybook-button--primary"
     : "storybook-button--secondary";
-  const value = React.useMemo(() => "ABC", []);
+
   return (
     <button
       type="button"
@@ -25,7 +25,6 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
       }}
     >
       {label}
-      <div>{value}</div>
       <div>
         {
           // insert mock here

@@ -12,13 +12,15 @@ import { v4 } from "uuid";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
-  title: "Example/Button",
   component: Button,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: "centered",
     moduleMock: {
       mock: () => {
+        console.log(v4);
+        console.log(Object.getOwnPropertyDescriptor(Test, "___symbol"));
+        console.log(Object.getOwnPropertyDescriptor(v4, "___symbol"));
         const mock = createMock(Test);
         const mock2 = createMock(v4);
         // Set original function
