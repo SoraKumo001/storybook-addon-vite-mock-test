@@ -1,9 +1,8 @@
-import { expect } from "@storybook/jest";
 import { Meta, StoryObj } from "@storybook/react";
+import { expect, userEvent, waitFor, within } from "@storybook/test";
 import { DependencyList, useMemo } from "react";
-import { MockTest } from "./MockTest";
-import { userEvent, waitFor, within } from "@storybook/test";
 import { createMock, getMock, getOriginal } from "storybook-addon-vite-mock";
+import { MockTest } from "./MockTest";
 
 const meta: Meta<typeof MockTest> = {
   component: MockTest,
@@ -21,7 +20,6 @@ export const Mock: StoryObj<typeof MockTest> = {
   parameters: {
     moduleMock: {
       mock: () => {
-        console.log(useMemo);
         const mock = createMock(useMemo);
         mock.mockImplementation((fn: () => unknown, deps: DependencyList) => {
           const value = getOriginal(useMemo)(fn, deps);

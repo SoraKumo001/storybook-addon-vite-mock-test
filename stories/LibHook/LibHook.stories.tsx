@@ -1,9 +1,8 @@
-import { expect } from "@storybook/jest";
 import { Meta, StoryObj } from "@storybook/react";
+import { expect, userEvent, waitFor, within } from "@storybook/test";
+import { createMock, getMock } from "storybook-addon-vite-mock";
 import { LibHook } from "./LibHook";
 import { getMessage } from "./message";
-import { userEvent, waitFor, within } from "@storybook/test";
-import { createMock, getMock } from "storybook-addon-vite-mock";
 
 const meta: Meta<typeof LibHook> = {
   component: LibHook,

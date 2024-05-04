@@ -10,6 +10,7 @@ const config = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
+    "@storybook/addon-coverage",
     {
       name: "storybook-addon-vite-mock",
       options: {
@@ -18,6 +19,11 @@ const config = {
       },
     },
   ],
+  build: {
+    test: {
+      disabledAddons: [],
+    },
+  },
   framework: {
     name: "@storybook/react-vite",
   },

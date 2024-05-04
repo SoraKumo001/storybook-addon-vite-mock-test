@@ -1,9 +1,8 @@
-import { expect } from "@storybook/jest";
 import { Meta, StoryObj } from "@storybook/react";
+import { expect, userEvent, waitFor, within } from "@storybook/test";
+import { createMock, getMock, resetMock } from "storybook-addon-vite-mock";
 import { action1, action2 } from "./action";
 import { MockReset } from "./MockReset";
-import { createMock, getMock, resetMock } from "storybook-addon-vite-mock";
-import { userEvent, waitFor, within } from "@storybook/test";
 
 const meta: Meta<typeof MockReset> = {
   component: MockReset,

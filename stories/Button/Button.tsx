@@ -1,8 +1,7 @@
-import React from "react";
 import PropTypes from "prop-types";
+import React from "react";
 import "./button.css";
 import { Test } from "./test";
-import { v4 } from "uuid";
 
 /**
  * Primary UI component for user interaction
@@ -11,7 +10,7 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   const mode = primary
     ? "storybook-button--primary"
     : "storybook-button--secondary";
-
+  const test = Test();
   return (
     <button
       type="button"
@@ -25,13 +24,7 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
       }}
     >
       {label}
-      <div>
-        {
-          // insert mock here
-          Test()
-        }
-      </div>
-      <div>[{v4()}]</div>
+      {test}
     </button>
   );
 };
