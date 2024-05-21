@@ -10,7 +10,14 @@ const config = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
-    "@storybook/addon-coverage",
+    {
+      name: "@storybook/addon-coverage",
+      options: {
+        istanbul: {
+          exclude: ["virtual:___mock.js"],
+        },
+      },
+    },
     {
       name: "storybook-addon-vite-mock",
       options: {
