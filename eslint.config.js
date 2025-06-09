@@ -1,8 +1,4 @@
-/**
- * @type {import('eslint').Linter.FlatConfig[]}
- */
 import eslint from "@eslint/js";
-import eslintConfigPrettier from "eslint-config-prettier";
 import importPlugin from "eslint-plugin-import";
 import eslintPluginStorybook from "eslint-plugin-storybook";
 import tslint from "typescript-eslint";
@@ -28,6 +24,7 @@ export default tslint.config(
   },
   {
     rules: {
+      "@typescript-eslint/no-empty-object-type": 0,
       "@typescript-eslint/no-unused-vars": 0,
       "no-empty-pattern": 0,
       "no-empty": 0,
@@ -51,6 +48,5 @@ export default tslint.config(
         },
       ],
     },
-  },
-  eslintConfigPrettier
+  }
 );

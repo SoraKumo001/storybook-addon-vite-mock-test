@@ -1,15 +1,16 @@
-/** @type { import('@storybook/react-vite').StorybookConfig } */
-const config = {
+import type { StorybookConfig } from "@storybook/react-vite";
+
+const config: StorybookConfig = {
   stories: [
     "../stories/**/*.mdx",
     "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
   addons: [
     "@storybook/addon-onboarding",
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
     "@chromatic-com/storybook",
-    "@storybook/addon-interactions",
+    "@storybook/addon-docs",
+    "@storybook/addon-a11y",
+    "@storybook/addon-vitest",
     {
       name: "@storybook/addon-coverage",
       options: {
@@ -26,16 +27,9 @@ const config = {
       },
     },
   ],
-  build: {
-    test: {
-      disabledAddons: [],
-    },
-  },
   framework: {
     name: "@storybook/react-vite",
-  },
-  docs: {
-    autodocs: "tag",
+    options: {},
   },
 };
 export default config;

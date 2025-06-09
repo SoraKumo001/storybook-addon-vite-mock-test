@@ -1,5 +1,5 @@
-import { StoryObj } from "@storybook/react";
-import { fn } from "@storybook/test";
+import { StoryObj } from "@storybook/react-vite";
+import { fn } from "storybook/test";
 
 import {
   createMock,

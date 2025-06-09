@@ -1,10 +1,10 @@
-import { Meta, StoryObj } from "@storybook/react";
-import { expect, userEvent, within } from "@storybook/test";
+import { Meta, StoryObj } from "@storybook/react-vite";
+import { expect, userEvent, within } from "storybook/test";
 import { createMock, getMock } from "storybook-addon-vite-mock";
 import { FormMock } from "./FormMock";
 import login from "./login";
 
-const meta: Meta<typeof FormMock> = {
+const meta: Meta = {
   tags: ["autodocs"],
   component: FormMock,
   parameters: {},

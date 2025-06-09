@@ -1,5 +1,5 @@
-import { Meta, StoryObj } from "@storybook/react";
-import { expect, waitFor, within } from "@storybook/test";
+import { Meta, StoryObj } from "@storybook/react-vite";
+import { expect, waitFor, within } from "storybook/test";
 import { createMock, getMock, render } from "storybook-addon-vite-mock";
 import { getMessage } from "./message";
 import { ReRender } from "./ReRender";
