@@ -1,0 +1,2 @@
+import{R as e}from"./iframe-lDvAkTGN.js";const s=(()=>{const o={},c=e.createContext(o);function r(n){const t=e.useContext(c);return e.useMemo(function(){return typeof n=="function"?n(t):{...t,...n}},[t,n])}function u(n){let t;return n.disableParentContext?t=typeof n.components=="function"?n.components(o):n.components||o:t=r(n.components),e.createElement(c.Provider,{value:t},n.children)}return ___createMock({useMDXComponents:r,MDXProvider:u})})(),{useMDXComponents:f,MDXProvider:a}=s;export{a as MDXProvider,f as useMDXComponents};
+//# sourceMappingURL=index-M8Pb-XbX.js.map
