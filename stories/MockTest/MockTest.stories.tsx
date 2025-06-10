@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/react-vite";
+import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { DependencyList, useMemo } from "react";
 import { expect, userEvent, waitFor, within } from "storybook/test";
 import { createMock, getMock, getOriginal } from "storybook-addon-vite-mock";

@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/react-vite";
+import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { expect, waitFor, within } from "storybook/test";
 import { render } from "storybook-addon-vite-mock";
 import { ReRenderArgs } from "./ReRenderArgs";

@@ -1,4 +1,4 @@
-import { StoryObj } from "@storybook/react-vite";
+import { StoryObj } from "@storybook/nextjs-vite";
 import { fn } from "storybook/test";
 
 import {

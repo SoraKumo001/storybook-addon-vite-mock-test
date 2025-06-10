@@ -1,4 +1,4 @@
-import type { StorybookConfig } from "@storybook/react-vite";
+import type { StorybookConfig } from "@storybook/nextjs-vite";
 
 const config: StorybookConfig = {
   stories: [
@@ -22,13 +22,16 @@ const config: StorybookConfig = {
     {
       name: "storybook-addon-vite-mock",
       options: {
-        exclude: ({ id }) => id.includes(".stories."),
+        exclude: ({
+          id,
+          // code
+        }) => id.includes(".stories."),
         // debugPath: "tmp",
       },
     },
   ],
   framework: {
-    name: "@storybook/react-vite",
+    name: "@storybook/nextjs-vite",
     options: {},
   },
 };
