@@ -22,10 +22,9 @@ const config: StorybookConfig = {
     {
       name: "storybook-addon-vite-mock",
       options: {
-        exclude: ({
-          id,
-          // code
-        }) => id.includes(".stories."),
+        exclude: ({ id }: { id: string[]; code: string }) => {
+          return id.includes(".stories.");
+        },
         // debugPath: "tmp",
       },
     },
