@@ -1,0 +1,1 @@
+{"version":3,"file":"mocker_false-B8vaUYqb.js","sources":["../../__vite-optional-peer-dep:msw/browser:@vitest/mocker:false"],"sourcesContent":["export default {};throw new Error(`Could not resolve \"msw/browser\" imported by \"@vitest/mocker\".`)"],"names":["mocker_false"],"mappings":"AAAA,MAAAA,EAAe,CAAA,EAAG,MAAM,IAAI,MAAM,+DAA+D"}
